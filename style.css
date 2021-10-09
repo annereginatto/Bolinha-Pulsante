@@ -20,14 +20,28 @@ h1 {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     cursor: default;
+    margin-bottom: 0;
 }
 
 h3 {
     font-family: 'Nova Slim', cursive;
     font-size: 18px;
     letter-spacing: 3px;
-    color: #f7f7f7;
+    background: #F7F7F7;
+    background: -webkit-linear-gradient(to right, #F7F7F7 0%, #0096FF 100%);
+    background: -moz-linear-gradient(to right, #F7F7F7 0%, #0096FF 100%);
+    background: linear-gradient(to right, #F7F7F7 0%, #0096FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
     cursor: default;
+    max-width: 550px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+h3:hover{
+    transform: scale(1.1);
+    transition-duration: 0.7s;
 }
 
 @keyframes color {
@@ -44,6 +58,14 @@ h3 {
     100% {color: lime;}
   }
 
+  canvas {
+      border-left: 10px solid rgba(20, 52, 164, 0.7);
+      border-right: 10px solid rgba(20, 52, 164, 0.7);
+      border-top: 10px solid rgba(20, 52, 164, 0.7);
+      border-bottom: 10px solid rgba(20, 52, 164, 0.7);
+      border-radius: 50px;
+  }
+
 footer p {
     text-align: center;
     font-size: 12px;
@@ -57,7 +79,7 @@ footer p {
   footer p:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
-
+    color: darkblue;
   }
 
   .icons {
@@ -71,5 +93,22 @@ footer p {
   }
 
   #linkedin:hover, #github:hover, #discord:hover, #codepen:hover, #mail:hover {
-      color: red;
+      color: darkblue;
   }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f7f7f7;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: darkblue;
+        border-radius: 20px;
+      }
