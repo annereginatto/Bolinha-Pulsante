@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+body {
+    text-align: center;
+    background-image: url("https://source.unsplash.com/E0AHdsENmDg");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 20px;
+    font-family: 'Train One', cursive;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    cursor: default;
+}
+
+h3 {
+    font-family: 'Nova Slim', cursive;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #f7f7f7;
+    cursor: default;
+}
+
+@keyframes color {
+    0% {color: blue;}
+    10% {color: lavender;}
+    20% {color: red;}
+    30% {color: yellow;}
+    40% {color: green;}
+    50% {color: pink;}
+    60% {color: violet;}
+    70% {color: purple;}
+    80% {color: orange;}
+    90% {color: deeppink;}
+    100% {color: lime;}
+  }
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    cursor: default;
+    font-family: "Gloria Hallelujah", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    color: #f7f7f7;
+  }
+  
+  footer p:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+
+  }
+
+  .icons {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  #linkedin, #github, #discord, #codepen, #mail {
+      color: #f7f7f7;
+      padding: 0 10px;
+  }
+
+  #linkedin:hover, #github:hover, #discord:hover, #codepen:hover, #mail:hover {
+      color: red;
+  }
